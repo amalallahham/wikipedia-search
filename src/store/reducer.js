@@ -17,7 +17,6 @@ const reducer = (state = initialState, action) => {
         return Object.assign({} , state , { data : initialState.data });
 
         case 'PROGRESS': 
-        console.log(action.value)
         return Object.assign({} , state , { progress : action.value });
 
         default: 

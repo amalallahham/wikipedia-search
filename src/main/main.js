@@ -30,7 +30,6 @@ class MainPage extends React.Component {
     }
 
     render() {
-        console.log(this.props.progress)
         const data = this.props.data || []
         return ( 
                 <div className="full-height">
@@ -90,7 +89,6 @@ const mapDispatchToProps = (dispatch) => {
                 }
                 const url = "https://en.wikipedia.org/w/api.php";
                 return axios.get(url + "?origin=*", {params: params}).then((response) => {
-                    console.log(response.data.query.search)
                         dispatch({type: 'PROGRESS', value: false })
                         dispatch({type: 'SEARCH_VALUES', value: response.data.query.search});
 
