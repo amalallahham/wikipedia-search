@@ -1,0 +1,95 @@
+
+.search-input {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    border-radius: 100px;
+    border: solid 1px #e9eaf4;
+    background: white;
+    overflow: hidden;
+
+}
+
+.icon {
+    padding: 1rem .5rem;
+
+}
+.search-icon {
+    color: #6c6f74
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+input {
+    height: 55px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.clear-icon:hover {
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.item {
+    flex: 1 1 100%;
+    margin: 1rem;
+    flex-basis: 47%;
+    flex-shrink: 2;
+}
+
+.empty-placeholder {
+    height: 90vh;
+    display: flex;
+    justify-content: center
+}
+
+.placeholder-items {
+    text-align: center;
+    margin-top: 7rem;
+
+
+
+}
+.placeholder-items p {
+    font-size: 36px;
+    font-family: sans-serif;  
+      font-weight: 600;
+}
+
+.placeholder-items span {
+    font-size: 22px;
+    font-family: sans-serif;  
+    font-weight: 500;
+    color: #797d8c;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .item {
+        max-width: 100%;
+    }
+  }

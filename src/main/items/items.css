@@ -1,0 +1,34 @@
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.redirect {
+    display: flex ;
+    flex-direction: row ;
+    align-items: center ;
+    align-content: center;
+    justify-content: center
+}
+
+.icon-arrow {
+    margin: 0.3rem 0rem 0rem 0.5rem;
+    color: #0073cf !important;
+}
+.redirect span {
+    color: #0073cf
+
+}
+
+.card:hover {
+    box-shadow: rgb(0 0 0 / 19%) 0px 2px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .img {
+        display: none;
+    }
+  }
